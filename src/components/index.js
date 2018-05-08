@@ -1,6 +1,6 @@
-const req = require.context('.', true, /\.\/[^/]+\/[^/]+\/index\.js$/);
+const req = require.context('.', true, /\.\/[^/]+\/[^/]+\/index\.vue$/);
 
 req.keys().forEach((key) => {
-  const componentName = key.replace(/^.+\/([^/]+)\/index\.js/, '$1');
+  const componentName = key.replace(/^.+\/([^/]+)\/index\.vue/, '$1');
   module.exports[componentName] = req(key).default;
 });
