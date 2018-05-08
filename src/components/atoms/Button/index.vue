@@ -4,7 +4,7 @@
       <a href="link">Sample Link</a>
     </template>
     <template v-else>
-      <button type="button" name="button">Button</button>
+      <button>Button</button>
     </template>
   </div>
 </template>
