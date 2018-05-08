@@ -38,6 +38,7 @@ module.exports = {
       '@': resolve('src'),
       components: path.resolve(__dirname, '../src/components/'),
       containers: path.resolve(__dirname, '../src/containers/'),
+      scss: path.resolve(__dirname, '../src/scss/'),
       store: path.resolve(__dirname, '../src/store/')
     }
   },
