@@ -7,8 +7,8 @@
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
-    "test": "jest --config src/jest.conf.js --coverage",
-    "test:watch": "jest --config src/jest.conf.js --watch",
+    "test": "jest --config private/test/jest.conf.js --coverage",
+    "test:watch": "jest --config private/test/jest.conf.js --watch",
     "storybook": "start-storybook -p 8001 -c private/storybook",
     "build": "node build/build.js"
   },
@@ -19,7 +19,9 @@
     "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^3.4.3",
     "@storybook/vue": "^3.4.3",
+    "@vue/test-utils": "^1.0.0-beta.15",
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
     "babel-eslint": "^8.2.1",
