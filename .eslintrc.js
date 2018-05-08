@@ -27,7 +27,7 @@ module.exports = {
   rules: {
     'semi': [2, 'always'],
     'semi-style': [2, 'last'],
-    'comma-dangle': [2, 'never'],
+    'comma-dangle': 0,
     'object-curly-newline': 0,
     'class-methods-use-this': 0,
     'prefer-const': 0,
@@ -43,11 +43,6 @@ module.exports = {
     'import/no-dynamic-require': 0,
     'import/no-extraneous-dependencies': 0,
     'import/prefer-default-export': 0,
-    'jsx-a11y/anchor-is-valid': [2, {
-      'components': ['Link'],
-      'specialLink': ['hrefLeft', 'hrefRight', 'to'],
-      'aspects': ['noHref', 'invalidHref', 'preferButton']
-    }],
     // don't require .vue extension when importing
     'import/extensions': ['error', 'always', {
       js: 'never',
