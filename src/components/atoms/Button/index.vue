@@ -1,11 +1,17 @@
-<template lang="html">
+<template>
   <div class="">
-    <button type="button" name="button">Sample Button</button>
+    <template v-if="link">
+      <a href="link">Sample Link</a>
+    </template>
+    <template v-else>
+      <button type="button" name="button">Button</button>
+    </template>
   </div>
 </template>
 
 <script>
 export default {
+  props: ['link']
 };
 </script>
 
