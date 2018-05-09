@@ -1,8 +1,7 @@
-const baseConfig = require('../../build/webpack.dev.conf');
 const path = require('path');
 
 module.exports = (storybookBaseConfig) => {
-  return Object.assign({}, storybookBaseConfig, {
+  let config = Object.assign({}, storybookBaseConfig, {
     entry: Object.assign({}, storybookBaseConfig.entry, {
       preview: ['babel-polyfill'].concat(storybookBaseConfig.entry.preview)
     }),
@@ -17,4 +16,12 @@ module.exports = (storybookBaseConfig) => {
       }
     })
   });
+
+  config.module.rules.push({
+    test: /\.scss$/,
+    loaders: ['style-loader', 'css-loader', 'sass-loader'],
+    include: path.resolve(__dirname, '../../src/scss/')
+  });
+
+  return config;
 };

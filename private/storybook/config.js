@@ -1,6 +1,7 @@
 import { configure } from '@storybook/vue';
 import Vue from 'vue';
 import Vuex from 'vuex';
+import '../../src/scss/base.scss';
 
 Vue.use(Vuex);
 
