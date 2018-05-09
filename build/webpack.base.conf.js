@@ -39,6 +39,7 @@ module.exports = {
       components: path.resolve(__dirname, '../src/components/'),
       containers: path.resolve(__dirname, '../src/containers/'),
       scss: path.resolve(__dirname, '../src/scss/'),
+      assets: path.resolve(__dirname, '../src/assets/'),
       store: path.resolve(__dirname, '../src/store/')
     }
   },
