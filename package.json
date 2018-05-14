@@ -9,7 +9,7 @@
     "start": "npm run dev",
     "test": "jest --config private/test/jest.conf.js --coverage",
     "test:watch": "jest --config private/test/jest.conf.js --watch",
-    "storybook": "start-storybook -p 8001 -c private/storybook",
+    "storybook": "start-storybook -p 8001 -c private/storybook -s ./src",
     "build": "node build/build.js"
   },
   "dependencies": {

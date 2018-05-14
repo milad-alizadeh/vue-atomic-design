@@ -39,7 +39,6 @@ module.exports = {
       components: path.resolve(__dirname, '../src/components/'),
       containers: path.resolve(__dirname, '../src/containers/'),
       scss: path.resolve(__dirname, '../src/scss/'),
-      assets: path.resolve(__dirname, '../src/assets/'),
       store: path.resolve(__dirname, '../src/store/')
     }
   },
@@ -57,7 +56,7 @@ module.exports = {
         include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
       },
       {
-        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        test: /\.(png|jpe?g|gif)(\?.*)?$/,
         loader: 'url-loader',
         options: {
           limit: 10000,
@@ -79,7 +78,12 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
-      }
+      },
+      {
+        test: /\.svg$/,
+        loader: 'raw-loader',
+        include: [resolve('src/components')]
+      },
     ]
   },
   node: {

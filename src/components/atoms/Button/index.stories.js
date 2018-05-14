@@ -1,7 +1,9 @@
 import { storiesOf } from '@storybook/vue';
+import VueInfoAddon from 'storybook-addon-vue-info';
 import Button from '.';
 
 storiesOf('Atom - Button', module)
+  .addDecorator(VueInfoAddon)
   .add('default', () => ({
     components: { Button },
     template: '<Button>rounded</Button>'
