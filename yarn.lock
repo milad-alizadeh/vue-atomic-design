@@ -107,6 +107,21 @@
     react-inspector "^2.2.2"
     uuid "^3.2.1"
 
+"@storybook/addon-options@^3.4.5":
+  version "3.4.5"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-options/-/addon-options-3.4.5.tgz#f1aeb1a8e5f9a804e4cc2b8aa86edcdf18dfe252"
+  dependencies:
+    babel-runtime "^6.26.0"
+
+"@storybook/addon-viewport@^3.4.5":
+  version "3.4.5"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-viewport/-/addon-viewport-3.4.5.tgz#dc12b75c2bb10606e5758f24b4bd5cff1c41df6c"
+  dependencies:
+    "@storybook/components" "3.4.5"
+    babel-runtime "^6.26.0"
+    global "^4.3.2"
+    prop-types "^15.6.1"
+
 "@storybook/addons@3.4.3":
   version "3.4.3"
   resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-3.4.3.tgz#537311d621cb3d582d581a160813608d6b27e4bd"
@@ -130,6 +145,14 @@
 "@storybook/components@3.4.3":
   version "3.4.3"
   resolved "https://registry.yarnpkg.com/@storybook/components/-/components-3.4.3.tgz#d21a9eb63c61529cfbb802d96ceaa67fb7fd50b0"
+  dependencies:
+    glamor "^2.20.40"
+    glamorous "^4.12.1"
+    prop-types "^15.6.1"
+
+"@storybook/components@3.4.5":
+  version "3.4.5"
+  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-3.4.5.tgz#02653ba562e3678eab3adbc31b012eae4fbe61dc"
   dependencies:
     glamor "^2.20.40"
     glamorous "^4.12.1"

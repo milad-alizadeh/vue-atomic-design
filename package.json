@@ -21,6 +21,8 @@
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.3",
+    "@storybook/addon-options": "^3.4.5",
+    "@storybook/addon-viewport": "^3.4.5",
     "@storybook/vue": "^3.4.3",
     "@vue/test-utils": "^1.0.0-beta.15",
     "autoprefixer": "^7.1.2",
